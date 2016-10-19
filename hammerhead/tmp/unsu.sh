@@ -21,10 +21,6 @@ remove_section() {
 
 remove_section init.rc "service daemonsu" "u:r:su:s0";
 
-cp /tmp/ramdisk/init.rc /sdcard/
-
-chmod 777 /sdcard/init.rc
-
 if [ -f /tmp/ramdisk/sbin/su ]; then
 	rm /tmp/ramdisk/sbin/su
 fi
